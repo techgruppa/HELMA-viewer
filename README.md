@@ -1,10 +1,15 @@
 # HELMA Viewer
 
-Public static viewer for HELMA InfoScreen.
+Public static viewer for HELMA InfoScreen, migrated from the newer WordPress
+Safe Mode plugin line (`new_version_helma.php`, plugin header 5.6 / internal
+version 5.5).
 
 This repository is intended to be published with GitHub Pages. It reads slide
 data from `HELMA_API_URL`, renders the fullscreen infoscreen, and polls for
 updates every 10 seconds by default.
+
+The viewer renders the newer text style fields used by the updated editor,
+including `fontWeight` and `fontStyle`.
 
 ## Configure
 
@@ -69,4 +74,3 @@ The viewer URL will usually be:
 ```text
 https://techgruppa.github.io/HELMA-viewer/
 ```
-

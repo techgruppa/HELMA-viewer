@@ -127,7 +127,7 @@
   (function () {
     "use strict";
 
-    const VERSION = "5.1-viewer";
+    const VERSION = "5.6-viewer";
     const API_URL = window.HELMA_API_URL || "";
     const API_TOKEN = window.HELMA_API_TOKEN || "";
     const BRANDING_IMAGE = window.HELMA_BRANDING_IMAGE || "";
@@ -215,7 +215,9 @@
           fontSize: "30px",
           fontFamily: "Arial",
           color: "#000000",
-          textAlign: "left"
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
         }, el.style || {})
       };
     }
@@ -273,6 +275,8 @@
       node.style.fontFamily = s.fontFamily || "Arial";
       node.style.color = s.color || "#000000";
       node.style.textAlign = s.textAlign || "left";
+      node.style.fontWeight = s.fontWeight || "normal";
+      node.style.fontStyle = s.fontStyle || "normal";
 
       if (el.type === "image") {
         node.style.backgroundImage = "url('" + cssUrl(el.src) + "')";
