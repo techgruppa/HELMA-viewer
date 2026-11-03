@@ -66,8 +66,10 @@ After pushing, enable GitHub Pages:
 
 1. Go to repository settings.
 2. Open **Pages**.
-3. Set source to **Deploy from a branch**.
-4. Use branch `main`, folder `/ (root)`.
+3. Set source to **GitHub Actions**.
+
+The workflow deploys the repository root on pushes to `main`. You can also
+start a deployment manually from the **Actions** tab.
 
 The viewer URL will usually be:
 
